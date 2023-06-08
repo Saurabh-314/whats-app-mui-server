@@ -28,8 +28,8 @@ Connection(username, password, DATABASE);
 
 const io = new Server(9000, {
   cors: {
-    origin: 'http://localhost:3000',
-    // origin: process.env.origin,
+//     origin: 'http://localhost:3000',
+    origin: process.env.origin,
   },
 })
 
